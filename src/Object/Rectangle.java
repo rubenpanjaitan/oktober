@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package Object;
+
+/**
+ *
+ * @author Hita Do
+ */
+public class Rectangle {
+    
+    private int width;
+    private int height;
+    public Point point;
+    
+    // four constructors
+    public Rectangle() {
+        point = new Point(0, 0);
+    }
+    public Rectangle(Point p) {
+        point = p;
+    }
+    public Rectangle(int w, int h) {
+        point = new Point(0, 0);
+        width = w;
+        height = h;
+    }
+    public Rectangle(Point p, int w, int h) {
+        point = p;
+        width = w;
+        height = h;
+    }
+
+    // a method for moving the rectangle
+    public void move(int x, int y) {
+        point.setX(x);
+        point.setY(y);
+    }
+
+    // a method for computing the area of the rectangle
+    public int getArea() {
+        return width * height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+    
+}
